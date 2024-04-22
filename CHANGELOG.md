@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/erickassis/A3_3semestre/compare/v1.0.0...v1.1.0) (2024-04-22)
+
+
+### Features
+
+* adiciona framework do site ([f705b41](https://github.com/erickassis/A3_3semestre/commit/f705b4195b189773d9f5aebb612b6512d70faa54))
+
 ## 1.0.0 (2024-04-22)
 
 
