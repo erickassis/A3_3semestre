@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/erickassis/A3_3semestre/compare/v1.1.0...v1.2.0) (2024-04-23)
+
+
+### Features
+
+* adiciona estilização ([ebc0b9a](https://github.com/erickassis/A3_3semestre/commit/ebc0b9a1919468b161639b050a4df05522749542))
+* adiciona imagens para estilização ([7a24746](https://github.com/erickassis/A3_3semestre/commit/7a2474627e803c075bc7c32207a21dc1739869d3))
+
 ## [1.1.0](https://github.com/erickassis/A3_3semestre/compare/v1.0.0...v1.1.0) (2024-04-22)
 
 
