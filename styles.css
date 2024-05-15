@@ -1,21 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: "Poppins";
+    font-family: "Poppins", "Arial";
 }
+
+
 body{
-    background-color: rgb(41, 28, 53);
+    background-color: rgb(39, 28, 53);
 }
+
+header {
+    background-color: rgb(86, 34, 107);
+}
+
      /*CARDS*/
-.card-container{
+.card-container {
 
     justify-content: center;
     display: flex;
     margin-top: 50px;
+
 }
-.card{
+
+.card {
+
     background-color: blueviolet;
     display: flex;
     justify-content: flex-end;
@@ -26,8 +36,10 @@ body{
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 10px;
+
 }
-img{
+
+img {
     display: flex;
     align-self: flex-start;
     margin-left: 0px;
@@ -36,12 +48,48 @@ img{
     height: 50px;
     width: 50px;
 }
-.card-content{
+.card-content {
     margin-top: 10px;
     margin-bottom: 20px;
     width: 300px;
     margin-left: 10px;
 }
-.card-content h2{
+
+.card-content h2 {
     font-size: 20px;
+}
+
+.logos {
+    width: 240px;
+    height: 100px;
+    float: right;
+    margin-right: 50px;
+}
+
+.paginacao {
+    text-align: center;
+}
+
+.paginacao a{
+    font-size: 30px;
+    text-decoration: none;
+    background-color: rgba(65, 101, 122, 0.938);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.paginacao a.ativo {
+     background-color: rgb(205, 54, 224);
+     font-weight:  bold;
+}
+
+/** Muda a cor ao passar o mouse por cima **/
+.paginacao a:hover:not(.ativo){
+    background-color: thistle;
+}
+
+/** RODAPÉ **/
+footer {
+    margin-top: 517px;
 }
