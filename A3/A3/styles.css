@@ -71,7 +71,7 @@ section {
 
     justify-content: center;
     display: flex;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .card {
@@ -86,7 +86,6 @@ section {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 10px;
 }
-
 img {
     display: flex;
     align-self: flex-start;
@@ -96,7 +95,6 @@ img {
     height: 50px;
     width: 50px;
 }
-
 .card-content {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -111,133 +109,23 @@ img {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-.card-content h2 {
-    font-size: 20px;
+.card-c{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
 }
-.card-jump{
+.card-d{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+.card-e{
     justify-content: center;
     display: flex;
     margin-bottom: 20px;
 }
 
-
-/*DROPDOWN*/
-ul {
-    list-style: none;
-    background: #fff;
-}
-
-ul li {
-    display: inline-block;
-    position: relative;
-}
-
-ul li a {
-    display: block;
-    padding: 20px 25px;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
+.card-content h2 {
     font-size: 20px;
 }
 
-ul li ul.dropdown li {
-    display: block;
-}
-
-ul li ul.dropdown {
-    width: 100%;
-    background: #fff;
-    position: absolute;
-    z-index: 999;
-    display: none;
-}
-
-ul li a:hover {
-    background: #fff;
-}
-
-ul li:hover ul.dropdown {
-    display: block;
-}
-/* FOOTER 
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-.footer .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.footer .box-container .box {
-    flex: 1 1 25rem;
-}
-
-.footer .box-container .box h3 {
-    color: #333;
-    font-size: 2.5rem;
-    padding: 1rem 0;
-}
-
-.footer .box-container .box a {
-    display: flex;
-    color: #666;
-    font-size: 1.5rem;
-    padding: 1rem 0;
-}
-
-.footer .box-container .box a:hover {
-    color: var(--purple);
-    text-decoration: underline;
-}
-
-.footer .box-container .box img {
-    margin-top: 1rem;
-    width: 150px;
-    height: auto;
-}*//* FOOTER 
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-.footer .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.footer .box-container .box {
-    flex: 1 1 25rem;
-}
-
-.footer .box-container .box h3 {
-    color: #333;
-    font-size: 2.5rem;
-    padding: 1rem 0;
-}
-
-.footer .box-container .box a {
-    display: flex;
-    color: #666;
-    font-size: 1.5rem;
-    padding: 1rem 0;
-}
-
-.footer .box-container .box a:hover {
-    color: var(--purple);
-    text-decoration: underline;
-}
-
-.footer .box-container .box img {
-    margin-top: 1rem;
-    width: 150px;
-    height: auto;
-}*/
