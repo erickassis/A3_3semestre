@@ -13,15 +13,18 @@
     <header>
         <a href="#" class="logo">Tori<span>.</span></a>
         <nav class="navbar">
-            <a href="#Gerenciamento de Projeto">Gerenciamento de Projeto</a>
-            <a href="#Desenvolvimento Integrado(IDES)">Desenvolvimento Integrado(IDES)</a>
-            <a href="#Controle de Versão">Controle de Versão</a>
-            <a href="#Gestão de Requisitos">Gestão de Requisitos</a>
-            <a href="#Prototipação">Prototipação</a>
+            <button class="prev" onclick="categoriaAnte(-1)">&#10094</button>
+            <a href="" class="categoria" onclick="categoriaAtual(0)">Gerenciamento de Projeto</a>
+            <a href="" class="categoria" onclick="categoriaAtual(1)">Desenvolvimento Integrado(IDES)</a>
+            <a href="" class="categoria" onclick="categoriaAtual(2)">Controle de Versão</a>
+            <a href="" class="categoria" onclick="categoriaAtual(3)">Gestão de Requisitos</a>
+            <button class="prox" onclick="categoriaProx(1)">&#10095</button>
         </nav>
     </header>
+
+
     <!--CARD-->
-    <h3>Gerenciamento de Projeto</h3>
+    <!--Gerenciamento de Projeto-->
     <div class="card-container">
         <div class="card">
             <img src="images/asana.png" alt="Logo Asana">
@@ -37,21 +40,7 @@
                 </p>
             </div>
         </div>
-        <div class="card">
-            <img src="images/BaseCamp.png" alt="Logo BaseCamp">
-            <div class="card-content">
-                <h2>BaseCamp</h2>
-                <p>
-                    O Basecamp é uma plataforma de gerenciamento de projetos e colaboração que centraliza comunicação,
-                    compartilhamento de arquivos e acompanhamento de tarefas em um único lugar. Com uma abordagem
-                    simples e
-                    intuitiva, o Basecamp permite que equipes organizem projetos, atribuam tarefas, compartilhem
-                    documentos
-                    e discutam ideias de forma eficiente.
-                    <a href="https://brasil.basecamp.com" target="_blank"><button>Ver mais</button></a>
-                </p>
-            </div>
-        </div>
+
         <div class="card">
             <img src="images/Jira.png" alt="Logo Jira">
             <div class="card-content">
@@ -67,23 +56,7 @@
                 </p>
             </div>
         </div>
-        <div class="card">
-            <img src="images/Microsoft Project.png" alt="Logo Microsoft Project">
-            <div class="card-content">
-                <h2>Microsoft Project</h2>
-                <p>O Microsoft Project é uma ferramenta de gerenciamento de projetos desenvolvida pela Microsoft,
-                    amplamente
-                    utilizada para planejar, programar e controlar projetos de diversos tamanhos e complexidades. Com
-                    uma
-                    interface intuitiva e uma variedade de recursos, o Project permite aos usuários criar cronogramas,
-                    atribuir
-                    recursos, definir metas, acompanhar o progresso e analisar o desempenho do projeto ao longo do
-                    tempo.
-                    <a href="https://www.microsoft.com/pt-br/microsoft-365/project/project-management-software"
-                        target="_blank"><button>Ver Mais</button></a>
-                </p>
-            </div>
-        </div>
+
         <div class="card">
             <img src="images/Trello.png" alt="Logo Trello">
             <div class="card-content">
@@ -102,8 +75,8 @@
         </div>
     </div>
 
-    <h3>Desenvolvimento Integrado(IDES)</h3>
-    <div class="card-row">
+    <!--Desenvolvimento Integrado(IDES)-->
+    <div class="card-container">
         <div class="card">
             <img src="images/Eclipse.png" alt="Logo Eclipse">
             <div class="card-content">
@@ -116,19 +89,7 @@
                 </p>
             </div>
         </div>
-        <div class="card">
-            <img src="images/IntelliJ IDEA.png" alt="Logo IntelliJ IDEA">
-            <div class="card-content">
-                <h2>IntelliJ IDEA</h2>
-                <p class="description">O IntelliJ IDEA oferece uma interface de usuário intuitiva e altamente
-                    personalizável, juntamente com uma ampla gama de recursos, como realce de sintaxe, refatoração de
-                    código, depuração, análise estática avançada, suporte a testes automatizados e integração com
-                    sistemas
-                    de controle de versão.
-                    <a href="https://www.jetbrains.com/idea/" target="_blank"><button>Ver Mais</button></a>
-                </p>
-            </div>
-        </div>
+
         <div class="card">
             <img src="images/NetBeans.png" alt="Logo NetBeans">
             <div class="card-content">
@@ -142,19 +103,7 @@
                 </p>
             </div>
         </div>
-        <div class="card">
-            <img src="images/PyCharm.png" alt="Logo PyCharm">
-            <div class="card-content">
-                <h2>PyCharm</h2>
-                <p class="description">O PyCharm oferece uma ampla gama de recursos para desenvolvedores Python,
-                    incluindo
-                    edição de código com realce de sintaxe, refatoração inteligente, navegação de código avançada,
-                    depuração
-                    interativa, suporte a testes automatizados e integração com sistemas de controle de versão
-                    <a href="https://www.jetbrains.com/pycharm/" target="_blank"><button>Ver Mais</button></a>
-                </p>
-            </div>
-        </div>
+
         <div class="card">
             <img src="images/Visual Studio Code.png" alt="Logo Visual Studio Code">
             <div class="card-content">
@@ -169,8 +118,8 @@
         </div>
     </div>
 
-    <h3>Controle de Versão</h3>
-    <div class="card-c">
+    <!--Controle de Versão-->
+    <div class="card-container">
         <div class="card">
             <img src="images/bitbucket.png" alt="Logo Confluence">
             <div class="card-content">
@@ -182,6 +131,7 @@
                 </p>
             </div>
         </div>
+
         <div class="card">
             <img src="images/git (2).png" alt="Logo Git">
             <div class="card-content">
@@ -194,6 +144,7 @@
                 </p>
             </div>
         </div>
+
         <div class="card">
             <img src="images/github.png" alt="Logo GitHub">
             <div class="card-content">
@@ -206,24 +157,10 @@
                 </p>
             </div>
         </div>>
-        <div class="card">
-            <img src="images/Subversion (SVN).png" alt="Logo Subversion (SVN)">
-            <div class="card-content">
-                <h2>Subversion (SVN)</h2>
-                <p class="description">O Subversion, também conhecido como SVN, é um sistema de controle de versão de
-                    código-fonte de código aberto, criado para rastrear alterações em arquivos e diretórios ao longo do
-                    tempo. Ele oferece uma maneira robusta de gerenciar e controlar o desenvolvimento de software,
-                    permitindo que equipes de desenvolvimento colaborem de maneira eficiente em projetos de todos os
-                    tamanhos.
-                    <a href="https://subversion.apache.org" target="_blank"><button>Ver Mais</button></a>
-                </p>
-            </div>
-        </div>
     </div>
 
-
-    <h3>Gestão de Requisitos</h3>
-    <div class="card-d">
+    <!--Gestão de Requisitos-->
+    <div class="card-container">
         <div class="card">
             <img src="images/Confluence.png" alt="Logo Confluence">
             <div class="card-content">
@@ -236,20 +173,7 @@
                 </p>
             </div>
         </div>
-        <div class="card">
-            <img src="images/Microsoft Azure DevOps.png" alt="Logo Microsoft Azure DevOps">
-            <div class="card-content">
-                <h2>Microsoft Azure DevOps</h2>
-                <p class="description">Azure DevOps é uma plataforma de gerenciamento de ciclo de vida de aplicativos
-                    fornecida pela Microsoft, projetada para ajudar equipes a planejar, desenvolver, testar e implantar
-                    aplicativos de maneira eficienteEle oferece uma variedade de ferramentas e serviços integrados para
-                    gerenciamento de projetos, controle de versão de código, automação de builds e testes, monitoramento
-                    de desempenho e implantação contínua.
-                    <a href="https://azure.microsoft.com/pt-br/products/devops/" target="_blank"><button>Ver
-                            Mais</button></a>
-                </p>
-            </div>
-        </div>
+    
         <div class="card">
             <img src="images/IBM.png" alt="Logo DOORS Next">
             <div class="card-content">
@@ -264,6 +188,7 @@
                 </p>
             </div>
         </div>
+        
         <div class="card">
             <img src="images/IBM.png" alt="Logo RequisitePro">
             <div class="card-content">
@@ -281,33 +206,7 @@
         </div>
     </div>
 
-    <h3>Prototipação</h3>
-    <div class="card-e">
-        <div class="card">
-            <img src="images/Microsoft Visio.png" alt="Logo Microsoft Visio">
-            <div class="card-content">
-                <h2>Microsoft Visio</h2>
-                <p class="description">O Microsoft Visio é uma ferramenta de diagramação e visualização de dados
-                    desenvolvida pela Microsoft.
-                    Ele oferece uma ampla gama de recursos para criar diagramas profissionais, como fluxogramas,
-                    organogramas, diagramas de rede, mapas mentais, diagramas de arquitetura de sistemas e muito mais.
-                    <a href="https://www.bing.com/search?q=Microsoft+Visio&qs=n&form=QBRE&sp=-1&lq=0&pq=axu&sc=9-3&sk=&cvid=BBF761031BB0445580ADD132D0D3472A&ghsh=0&ghacc=0&ghpl="
-                        target="_blank"><button>Ver Mais</button></a>
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/Balsamiq.png" alt="Logo Balsamiq">
-            <div class="card-content">
-                <h2>Balsamiq</h2>
-                <p class="description">O Balsamiq é uma ferramenta de prototipagem de baixa fidelidade usada para criar
-                    wireframes de interface de usuário de forma rápida e fácil.
-                    Com uma interface simples e uma variedade de componentes pré-desenhados, o Balsamiq permite aos
-                    usuários
-                    esboçar ideias de design de maneira rápida e eficiente, sem se preocupar com detalhes de design ou
-                    aparência visual.
-                    <a href="https://balsamiq.com/" target="_blank"><button>VerMais</button></a>
-                </p>
-            </div>
-        </div>
-    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

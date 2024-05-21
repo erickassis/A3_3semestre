@@ -75,7 +75,6 @@ section {
 }
 
 .card {
-    background-color: blueviolet;
     display: flex;
     justify-content: flex-end;
     background-color: #bcb9d8;
@@ -127,5 +126,9 @@ img {
 
 .card-content h2 {
     font-size: 20px;
+}
+
+.ativo, categoria:hover{
+    background-color: black;
 }
 
