@@ -1,6 +1,7 @@
 const cartoes = document.querySelectorAll(".card-container");
 
 let indexCartoes = 1;
+
 mostrarCartoes(indexCartoes);
 
 function adicionarCartoes(n){

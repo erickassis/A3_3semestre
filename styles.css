@@ -130,5 +130,6 @@ img {
 
 .ativo, categoria:hover{
     background-color: black;
+    border-radius: 45px;
 }
 
