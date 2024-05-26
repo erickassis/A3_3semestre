@@ -1,7 +1,7 @@
 {
   "name": "a3_3semestre-orgazinar",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "jest"
   },
