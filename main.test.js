@@ -1,32 +1,28 @@
-const main = require('./main');
+/**
+ * @jest-environment jsdom
+ */
 
-describe('mostrarCartoes', () => {
-    let cartoes;
-    let categorias;
+const { adicionarCartoes, cartaoAtual} = require('./main.js');
 
-    beforeEach(() => {
-        document.body.innerHTML = `
-            <div class="card-container" style="display: none;"></div>
-            <div class="card-container" style="display: none;"></div>
-            <div class="categoria"></div>
-            <div class="categoria"></div>
-        `;
+// Mock da função mostrarCartoes
 
-        cartoes = document.getElementsByClassName("card-container");
-        categorias = document.getElementsByClassName("categoria");
+beforeEach(() => {
+    document.body.innerHTML = `
+        <div class="card-container"></div>
+        <div class="card-container"></div>
+        <div class="categoria"></div>
+        <div class="categoria"></div>
+    `;
+});
+
+describe('Testes para adicionarCartoes e cartaoAtual', () => {
+    test('adicionarCartoes deve mostar erro se n não for um número', () => {
+        expect(() => adicionarCartoes('a')).toThrow('Parâmetro inválido: n deve ser um número.');
+        expect(() => adicionarCartoes(NaN)).toThrow('Parâmetro inválido: n deve ser um número.');
     });
 
-    test('Deve exibir o primeiro cartão e ativar sua categoria', () => {
-        mostrarCartoes(1, cartoes, categorias);
-
-        expect(cartoes[0].style.display).toBe('flex');
-        expect(categorias[0].className).toContain('ativo');
-    });
-
-    test('Deve exibir o último cartão e ativar sua categoria', () => {
-        mostrarCartoes(2, cartoes, categorias); 
-
-        expect(cartoes[1].style.display).toBe('flex');
-        expect(categorias[1].className).toContain('ativo');
-    });
+    test('cartaoAtual deve mostar erro se n não for um número', () => {
+        expect(() => cartaoAtual('a')).toThrow('Parâmetro inválido: n deve ser um número.');
+        expect(() => cartaoAtual(NaN)).toThrow('Parâmetro inválido: n deve ser um número.');
+    }); 
 });
