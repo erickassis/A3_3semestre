@@ -66,12 +66,45 @@ section {
     padding: 2rem 9%;
 }
 
+/*.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/Banner.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: #333;
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color: var(--purple);
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color: #999;;
+    padding:1rem 0;
+    line-height: 1.5;
+}*/
+
 /*CARDS*/
 .card-container {
 
     justify-content: center;
     display: flex;
     margin-top: 100px;
+    margin-bottom: 250px;
 }
 
 .card {
@@ -85,6 +118,7 @@ section {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     margin: 10px;
 }
+
 img {
     display: flex;
     align-self: flex-start;
@@ -94,6 +128,7 @@ img {
     height: 50px;
     width: 50px;
 }
+
 .card-content {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -102,23 +137,26 @@ img {
     margin-top: 20px;
 }
 
-.card-row{
+.card-row {
     justify-content: center;
     display: flex;
     margin-bottom: 20px;
     margin-top: 20px;
 }
-.card-c{
+
+.card-c {
     justify-content: center;
     display: flex;
     margin-bottom: 20px;
 }
-.card-d{
+
+.card-d {
     justify-content: center;
     display: flex;
     margin-bottom: 20px;
 }
-.card-e{
+
+.card-e {
     justify-content: center;
     display: flex;
     margin-bottom: 20px;
@@ -128,8 +166,61 @@ img {
     font-size: 20px;
 }
 
-.ativo, categoria:hover{
+.ativo,
+categoria:hover {
     background-color: black;
     border-radius: 45px;
 }
 
+/*FOOTER*/
+.footer {
+    padding: 2rem 9%;
+}
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box {
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3 {
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .developer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer .box-container .box .developer img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer .box-container .box a {
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover {
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+.footer .box-container .box img {
+    margin-top: 1rem;
+    width: 45%;
+    height: 100px;
+    object-fit: fill;
+}
