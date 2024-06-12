@@ -67,7 +67,11 @@ section {
     padding: 2rem 9%;
 }
 
+<<<<<<< HEAD
 .home{
+=======
+/*.home{
+>>>>>>> 92bf4fa0bd8e985ad5fdd195071dc8711335a35d
     display: flex;
     align-items: center;
     min-height: 100vh;
@@ -97,6 +101,7 @@ section {
     color: #999;;
     padding:1rem 0;
     line-height: 1.5;
+<<<<<<< HEAD
 }
 
 /*ABOUT US*/
@@ -179,6 +184,10 @@ section {
 .btn:hover {
     background: var(--purple);
 }
+=======
+}*/
+
+>>>>>>> 92bf4fa0bd8e985ad5fdd195071dc8711335a35d
 /*CARDS*/
 .card-container {
 
