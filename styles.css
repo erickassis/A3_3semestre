@@ -67,11 +67,7 @@ section {
     padding: 2rem 9%;
 }
 
-<<<<<<< HEAD
-.home{
-=======
-/*.home{
->>>>>>> 92bf4fa0bd8e985ad5fdd195071dc8711335a35d
+.home {
     display: flex;
     align-items: center;
     min-height: 100vh;
@@ -80,28 +76,28 @@ section {
     background-position: center;
 }
 
-.home .content{
+.home .content {
     max-width: 50rem;
 }
 
-.home .content h3{
+.home .content h3 {
     font-size: 6rem;
     color: #333;
 }
 
-.home .content span{
+.home .content span {
     font-size: 3.5rem;
     color: var(--purple);
-    padding:1rem 0;
+    padding: 1rem 0;
     line-height: 1.5;
 }
 
-.home .content p{
+.home .content p {
     font-size: 1.5rem;
-    color: #999;;
-    padding:1rem 0;
+    color: #999;
+    ;
+    padding: 1rem 0;
     line-height: 1.5;
-<<<<<<< HEAD
 }
 
 /*ABOUT US*/
@@ -184,17 +180,14 @@ section {
 .btn:hover {
     background: var(--purple);
 }
-=======
-}*/
 
->>>>>>> 92bf4fa0bd8e985ad5fdd195071dc8711335a35d
 /*CARDS*/
 .card-container {
 
     justify-content: center;
     display: flex;
     margin-top: 100px;
-    margin-bottom: 250px;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -260,6 +253,44 @@ img {
 categoria:hover {
     background-color: black;
     border-radius: 45px;
+}
+
+/*CONTACT*/
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .1);
+    background: #fff;
+    border-radius: .5rem;
+    align-items: center;
+}
+
+.contact .row form .box {
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: 1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+
+.contact .row form .box:focus {
+    border-color: var(--purple);
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+
 }
 
 /*FOOTER*/
