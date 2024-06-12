@@ -111,7 +111,7 @@ section {
 }
 
 .heading span {
-    color: var(--purple);
+    color: #FFBDF4;
 }
 
 .about .row {
@@ -142,7 +142,7 @@ section {
     top: 50%;
     transform: translateY(-50%);
     font-size: 3rem;
-    background: #fff;
+    background: #FFBDF4;
     width: 100%;
     padding: 1rem 2rem;
     text-align: center;
@@ -193,9 +193,9 @@ section {
 .card {
     display: flex;
     justify-content: flex-end;
-    background-color: #bcb9d8;
-    width: 400px;
-    height: 200px;
+    background-color: #FFBDF4;
+    width: 410px;
+    height: 300px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -227,32 +227,87 @@ img {
     margin-top: 20px;
 }
 
-.card-c {
-    justify-content: center;
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.card-d {
-    justify-content: center;
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.card-e {
-    justify-content: center;
-    display: flex;
-    margin-bottom: 20px;
-}
-
 .card-content h2 {
-    font-size: 20px;
+    font-size: 30px;
+}
+
+.card-content p {
+    font-size: 12px;
+
 }
 
 .ativo,
 categoria:hover {
     background-color: black;
-    border-radius: 45px;
+    border-radius: 50px;
+}
+
+.glow-on-hover {
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: #111;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
 
 /*CONTACT*/
@@ -295,7 +350,8 @@ categoria:hover {
 
 /*FOOTER*/
 .footer {
-    padding: 2rem 9%;
+    padding: 4rem 9%;
+    height: auto;
 }
 
 .footer .box-container {
