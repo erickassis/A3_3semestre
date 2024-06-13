@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/erickassis/A3_3semestre/compare/v2.0.0...v2.0.1) (2024-06-13)
+
+
+### Bug Fixes
+
+* corrige erro de imagens de logo  ([3c6575e](https://github.com/erickassis/A3_3semestre/commit/3c6575efec7183be8ab64329c73387f1e6155857))
+
 ## [2.0.0](https://github.com/erickassis/A3_3semestre/compare/v1.3.0...v2.0.0) (2024-06-13)
 
 
